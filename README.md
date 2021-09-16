@@ -4,7 +4,7 @@ Run an Alonzo private testnet, with or without Docker.
 
 ## How it works
 
-- We run 3 nodes to facilitate protocol bootstrapping. They are run in the same parent process for scripting simplicity. Of course you can run them in 3 different processes/containers/hosts to make it a truly distributed ledger.
+- We run 3 nodes to facilitate protocol bootstrapping. They are run in the same parent process for scripting simplicity. Of course you can run them in 3 different processes/containers/hosts to make it more realistic.
 - The configs mimic official mainnet configs.
 - The `Test...HardFork` parameters in `config.json` help us fork directly to Alonzo era right from the start.
 - Once the nodes are ready, `mint-tokens.sh` will run automatically and mint some test tokens to the genesis address. You can modify this script to mint more tokens or distribute to other addresses. The genesis keys are located in `shelley/utxo-keys`.
