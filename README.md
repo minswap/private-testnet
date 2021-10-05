@@ -1,4 +1,4 @@
-**Current node version: 1.29.0**
+**Current node version: 1.30.1**
 
 Run an Alonzo private testnet, with or without Docker.
 
