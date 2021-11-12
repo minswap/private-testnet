@@ -4,8 +4,8 @@
 
 set -euo pipefail
 
-# Source: https://github.com/input-output-hk/cardano-node/releases/tag/1.29.0
-BUILD_ID="7370192"
+# Source: https://github.com/input-output-hk/cardano-node/releases/tag/1.31.0
+BUILD_ID="7654130"
 
 rm -rf dev-config
 mkdir -p dev-config
