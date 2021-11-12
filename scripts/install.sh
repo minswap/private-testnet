@@ -12,9 +12,9 @@ clean() {
 }
 trap clean EXIT
 
-# Version: 1.30.1
-LINUX_BUILD="7739415"
-MACOS_BUILD="7739444"
+# Version: 1.31.0
+LINUX_BUILD="8113349"
+MACOS_BUILD="8113506"
 
 rm -rf bin
 mkdir -p bin

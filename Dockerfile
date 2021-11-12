@@ -3,9 +3,9 @@ FROM debian:buster-slim as builder
 WORKDIR /build
 RUN apt-get update -y && \
   apt-get install -y wget tar && \
-  wget https://hydra.iohk.io/build/7739415/download/1/cardano-node-1.30.1-linux.tar.gz && \
+  wget https://hydra.iohk.io/build/8113349/download/1/cardano-node-1.31.0-linux.tar.gz && \
   mkdir -p bin && \
-  tar -xzf cardano-node-1.30.1-linux.tar.gz -C bin
+  tar -xzf cardano-node-1.31.0-linux.tar.gz -C bin
 
 FROM debian:buster-slim
 
