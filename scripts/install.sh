@@ -6,6 +6,10 @@
 
 set -euo pipefail
 
+here="$( cd "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
+root="$( cd "$here/.." && pwd )"
+cd "$root"
+
 clean() {
   echo "Clean up"
   rm bin.tar.gz
