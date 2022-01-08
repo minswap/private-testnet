@@ -8,7 +8,7 @@ root="$(cd "$here/.." && pwd)"
 cd "$root"
 
 export PATH=$PWD/bin:$PATH
-TOKENS=(tMIN tBTC tETH)
+TOKENS=(744d494e 74425443 74455448)
 AMOUNT='45000000000000000'
 
 clean() {
