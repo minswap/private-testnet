@@ -1,4 +1,4 @@
-**Current node version: 1.31.0**
+**Current node version: 1.33.0**
 
 Run an Alonzo private testnet, with or without Docker.
 
@@ -15,7 +15,7 @@ Run an Alonzo private testnet, with or without Docker.
 
 **Note:** We will mount the node sockets in `sockets` directory, however these sockets don't work with Docker for Mac. If you're using MacOS, you need to `docker exec` into node container to use `cardano-cli`. Please note that `cardano-node` and `cardano-cli` behave **quite differently** in MacOS, so you might want to run them in Docker or Linux to be close to production environment.
 
-1. Run `docker-compose.yml up` to start a new private testnet in Docker.
+1. Run `docker-compose up` to start a new private testnet in Docker.
 2. Run `./scripts/install.sh` to install `cardano-cli`.
 3. Run `export CARDANO_NODE_SOCKET_PATH=$PWD/sockets/node-pool1.sock` for `cardano-cli` to work.
 4. (Optional) Run `export PATH=$PATH:$PWD/bin` so you can use `cardano-cli` instead of `./bin/cardano-cli`.
