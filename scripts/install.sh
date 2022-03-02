@@ -6,8 +6,8 @@
 
 set -euo pipefail
 
-here="$( cd "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
-root="$( cd "$here/.." && pwd )"
+here="$(cd "$(dirname "$0")" >/dev/null 2>&1 && pwd)"
+root="$(cd "$here/.." && pwd)"
 cd "$root"
 
 clean() {
@@ -16,9 +16,9 @@ clean() {
 }
 trap clean EXIT
 
-# Version: 1.33.0
-LINUX_BUILD="9941151"
-MACOS_BUILD="9941204"
+VERSION="1.34.0"
+LINUX_BUILD="12997298"
+MACOS_BUILD="12997315"
 
 rm -rf bin
 mkdir -p bin
@@ -26,10 +26,10 @@ mkdir -p bin
 echo "Download binaries from official IOHK build"
 case $(uname) in
 Darwin)
-  wget -O bin.tar.gz https://hydra.iohk.io/build/${MACOS_BUILD}/download/1/cardano-node-1.33.0-macos.tar.gz
+  wget -O bin.tar.gz https://hydra.iohk.io/build/${MACOS_BUILD}/download/1/cardano-node-${VERSION}-macos.tar.gz
   ;;
 Linux)
-  wget -O bin.tar.gz https://hydra.iohk.io/build/${LINUX_BUILD}/download/1/cardano-node-1.33.0-linux.tar.gz
+  wget -O bin.tar.gz https://hydra.iohk.io/build/${LINUX_BUILD}/download/1/cardano-node-${VERSION}-linux.tar.gz
   ;;
 esac
 

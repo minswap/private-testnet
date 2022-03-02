@@ -3,9 +3,9 @@ FROM debian:11-slim as builder
 WORKDIR /build
 RUN apt-get update -y && \
   apt-get install -y wget tar && \
-  wget https://hydra.iohk.io/build/9941151/download/1/cardano-node-1.33.0-linux.tar.gz && \
+  wget https://hydra.iohk.io/build/12997298/download/1/cardano-node-1.34.0-linux.tar.gz && \
   mkdir -p bin && \
-  tar -xzf cardano-node-1.33.0-linux.tar.gz -C bin
+  tar -xzf cardano-node-1.34.0-linux.tar.gz -C bin
 
 FROM debian:11-slim
 
