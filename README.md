@@ -22,10 +22,7 @@ Run an Babbage private testnet, with or without Docker.
 
 ### Without Docker
 
-Supported OS:
-
-- Linux
-- MacOS
+Tested on Linux.
 
 1. Run `./scripts/install.sh` to install necessary binaries.
 2. Run `./scripts/reset.sh` to run a new private testnet.
