@@ -1,0 +1,116 @@
+{
+    "activeSlotsCoeff": 0.1,
+    "epochLength": 500,
+    "genDelegs": {
+        "0417356ec6cfabbe8d11657bb56efcc61f2f85b5a7a074c645db399a": {
+            "delegate": "e84fe2a61072fd22ef2dd8b290f3ddc5b17d3aff849e5492dddd758d",
+            "vrf": "c8dc168fb8ad10c7a240205c854f171fc49e3f0eb398b7681cca1a246d7e4e9a"
+        },
+        "c8d281570f265126bf33fe67ef39ec27c07c19100dfef6a19d6b06aa": {
+            "delegate": "34b742be96585166bec316505df52ab2cdff07647189a1c29e1d5bc0",
+            "vrf": "0fb77fc846b6dbf5b8bfe984bec5d715c28298f7b7ae7146373a8d85f05bfedc"
+        },
+        "e7838afe60fd426634704c376bd127f5bf41dece34961913a0dc2768": {
+            "delegate": "96bdc7c60d0c8db3b57a64bb183913e5163d2bfbce3b674fea537416",
+            "vrf": "a5ec05f622623b2c05e1afa11cfe22dbda28e47870410130dd67fcc2d14e88e9"
+        }
+    },
+    "initialFunds": {
+        "00325b6b77f7a51ec531df38eac3fbd49881d99de2dadf6fba37aa126141feb164530a2b1def7a488d51f3440c0881c2e258e6ef2cba3ae12c": 300000000000,
+        "0044878fef084d978e0568060ecc17a53c20395cdc7402e2e2addf32f2724e519a6c823015ebb2e4ae17d78d1058e9b675b74677ed00e1ab57": 300000000000,
+        "00b36bdbc4d2455b0c24b0e7fa3c20bc85b9b33f76b42de8b10af7e8477bf8589318f4afa01c3ea5971aa9610af6e76db16070993ba64ced2f": 300000000000,
+        "60810ce86712213e6496fe4516489dbcb2601e5b652c3ee21f650a1daf": 300000000000,
+        "60bf290e2a70a8ee2fe818634b66fbdf91de68e5f65a59e27b2c63ba10": 300000000000,
+        "60ed77aa2ebf31831b3edc348787b8ce37320f45ad4d467f0477a8c377": 300000000000
+    },
+    "maxKESEvolutions": 60,
+    "maxLovelaceSupply": 2000000000000,
+    "networkId": "Testnet",
+    "networkMagic": 42,
+    "protocolParams": {
+        "a0": 0.0,
+        "decentralisationParam": 0.7,
+        "eMax": 18,
+        "extraEntropy": {
+            "tag": "NeutralNonce"
+        },
+        "keyDeposit": 0,
+        "maxBlockBodySize": 65536,
+        "maxBlockHeaderSize": 1100,
+        "maxTxSize": 16384,
+        "minFeeA": 44,
+        "minFeeB": 155381,
+        "minPoolCost": 0,
+        "minUTxOValue": 1000000,
+        "nOpt": 100,
+        "poolDeposit": 0,
+        "protocolVersion": {
+            "major": 7,
+            "minor": 0
+        },
+        "rho": 0.1,
+        "tau": 0.1
+    },
+    "securityParam": 10,
+    "slotLength": 0.1,
+    "slotsPerKESPeriod": 129600,
+    "staking": {
+        "pools": {
+            "1bb0549ceb2132272c157bc1c5d6123c55d219479ced0b378ef10578": {
+                "cost": 0,
+                "margin": 0.0,
+                "metadata": null,
+                "owners": [],
+                "pledge": 0,
+                "publicKey": "1bb0549ceb2132272c157bc1c5d6123c55d219479ced0b378ef10578",
+                "relays": [],
+                "rewardAccount": {
+                    "credential": {
+                        "key hash": "f3351e34173599bcc3888d5d780d5d3b9abe1820cba787a5da9bece6"
+                    },
+                    "network": "Testnet"
+                },
+                "vrf": "9f832d78ed1cc3d7eb988b40d664c922d8018271a3baf3df93cbeb94b6a25c47"
+            },
+            "1c1fe4b43ff4174c0f6b23db6f8252c3456e4880b624c6e129d1bd10": {
+                "cost": 0,
+                "margin": 0.0,
+                "metadata": null,
+                "owners": [],
+                "pledge": 0,
+                "publicKey": "1c1fe4b43ff4174c0f6b23db6f8252c3456e4880b624c6e129d1bd10",
+                "relays": [],
+                "rewardAccount": {
+                    "credential": {
+                        "key hash": "566219424fac032924fa537068e670de61ef17814909809373accee9"
+                    },
+                    "network": "Testnet"
+                },
+                "vrf": "568c2181a56bd1acb8ce64a531e4b61f47638733967cd2e80a94c8921fbdc55d"
+            },
+            "d32452643760efddcdf364acaca49baee945b1981f81f53c46745d6b": {
+                "cost": 0,
+                "margin": 0.0,
+                "metadata": null,
+                "owners": [],
+                "pledge": 0,
+                "publicKey": "d32452643760efddcdf364acaca49baee945b1981f81f53c46745d6b",
+                "relays": [],
+                "rewardAccount": {
+                    "credential": {
+                        "key hash": "5382737f4ed71c45558636ab1ff15812d477e66933a21f3bd280e895"
+                    },
+                    "network": "Testnet"
+                },
+                "vrf": "340b6ebd6034adba510a3db3c4c7d224b371871376a4936b11a3d8adbf3744c9"
+            }
+        },
+        "stake": {
+            "41feb164530a2b1def7a488d51f3440c0881c2e258e6ef2cba3ae12c": "d32452643760efddcdf364acaca49baee945b1981f81f53c46745d6b",
+            "724e519a6c823015ebb2e4ae17d78d1058e9b675b74677ed00e1ab57": "1c1fe4b43ff4174c0f6b23db6f8252c3456e4880b624c6e129d1bd10",
+            "7bf8589318f4afa01c3ea5971aa9610af6e76db16070993ba64ced2f": "1bb0549ceb2132272c157bc1c5d6123c55d219479ced0b378ef10578"
+        }
+    },
+    "systemStart": "2022-10-13T15:57:00+07:00",
+    "updateQuorum": 2
+}

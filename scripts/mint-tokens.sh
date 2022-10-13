@@ -21,16 +21,16 @@ while [ ! -S "$CARDANO_NODE_SOCKET_PATH" ]; do
   sleep 2
 done
 
-echo "Create Mary-era minting policy"
-cat >shelley/utxo-keys/minting-policy.json <<EOL
+echo "Create native script minting policy"
+cat >utxo-keys/minting-policy.json <<EOL
 {
-  "keyHash": "$(cardano-cli address key-hash --payment-verification-key-file shelley/utxo-keys/utxo1.vkey)",
+  "keyHash": "$(cardano-cli address key-hash --payment-verification-key-file utxo-keys/utxo1.vkey)",
   "type": "sig"
 }
 EOL
 
-currencySymbol=$(cardano-cli transaction policyid --script-file shelley/utxo-keys/minting-policy.json)
-addr=$(cardano-cli address build --payment-verification-key-file shelley/utxo-keys/utxo1.vkey --testnet-magic 42)
+currencySymbol=$(cardano-cli transaction policyid --script-file utxo-keys/minting-policy.json)
+addr=$(cardano-cli address build --payment-verification-key-file utxo-keys/utxo1.vkey --testnet-magic 42)
 # Spend the first UTxO
 utxo=$(cardano-cli query utxo --address "$addr" --testnet-magic 42 | awk 'NR == 3 {printf("%s#%s", $1, $2)}')
 
@@ -46,13 +46,13 @@ cardano-cli transaction build \
   --tx-in "$utxo" \
   --tx-out "$addr"+10000000+"$tokenList" \
   --mint "$tokenList" \
-  --mint-script-file shelley/utxo-keys/minting-policy.json \
+  --mint-script-file utxo-keys/minting-policy.json \
   --testnet-magic 42 \
   --out-file tx.raw
 
 cardano-cli transaction sign \
   --tx-body-file tx.raw \
-  --signing-key-file shelley/utxo-keys/utxo1.skey \
+  --signing-key-file utxo-keys/utxo1.skey \
   --testnet-magic 42 \
   --out-file tx.signed
 
