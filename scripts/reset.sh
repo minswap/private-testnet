@@ -19,7 +19,7 @@ Darwin) date='gdate' ;;
 *) date='date' ;;
 esac
 
-timeISO=$($date -Iseconds -d "now + 30 seconds")
+timeISO=$($date -u -d "now + 30 seconds" +"%Y-%m-%dT%H:%M:%SZ")
 timeUnix=$($date -d "now + 30 seconds" +%s)
 
 echo "Clean old state and logs"
@@ -57,6 +57,6 @@ run/node-spo2.sh &
 run/node-spo3.sh &
 
 # Mint test tokens as soon as nodes are ready
-CARDANO_NODE_SOCKET_PATH=$PWD/sockets/node-spo3.sock ./scripts/mint-tokens.sh &
+CARDANO_NODE_SOCKET_PATH=$PWD/sockets/node-spo3.sock
 
 wait
