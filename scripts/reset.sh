@@ -19,7 +19,7 @@ Darwin) date='gdate' ;;
 *) date='date' ;;
 esac
 
-timeISO=$($date -Iseconds -d "now + 30 seconds")
+timeISO=$($date -u -d "now + 30 seconds" +"%Y-%m-%dT%H:%M:%SZ")
 timeUnix=$($date -d "now + 30 seconds" +%s)
 
 echo "Clean old state and logs"
