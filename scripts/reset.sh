@@ -57,6 +57,6 @@ run/node-spo2.sh &
 run/node-spo3.sh &
 
 # Mint test tokens as soon as nodes are ready
-CARDANO_NODE_SOCKET_PATH=$PWD/sockets/node-spo3.sock
+CARDANO_NODE_SOCKET_PATH=$PWD/sockets/node-spo3.sock ./scripts/mint-tokens.sh &
 
 wait
