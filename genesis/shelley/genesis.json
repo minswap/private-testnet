@@ -1,6 +1,6 @@
 {
     "activeSlotsCoeff": 0.1,
-    "epochLength": 500,
+    "epochLength": 432000,
     "genDelegs": {
         "0417356ec6cfabbe8d11657bb56efcc61f2f85b5a7a074c645db399a": {
             "delegate": "e84fe2a61072fd22ef2dd8b290f3ddc5b17d3aff849e5492dddd758d",
